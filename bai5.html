@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" onclick="checkStar()">
+<script>
+    let arrSao1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus']
+    let arrSao2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+
+    function checkStar() {
+        let index, checker;
+          a  = prompt("nhap ten sao can tim")
+        for (let i = 0; i < arrSao1.length; i++) {
+            if (a === arrSao1[i]) {
+                index = 1;
+                break;
+            } else {
+                checker = 0
+            }
+        }
+        console.log(checker)
+        if (checker === 0) {
+            alert("khong co sao nay")
+        } else {
+            let c = arrSao2[index];
+            alert(c)
+        }
+    }
+</script>
+</body>
+</html>
